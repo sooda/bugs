@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% import "macro_a_level0.html" as level0 %}
+{% block content %}
+{{ level0::outer() }}
+{% endblock content %}

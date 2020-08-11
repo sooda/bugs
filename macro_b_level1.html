@@ -1,0 +1,7 @@
+{% macro deeper() %}
+hello from b
+{% endmacro deeper %}
+
+{% macro inner() %}
+{{ self::deeper() }}
+{% endmacro inner %}

@@ -1,0 +1,4 @@
+{% import "macro_a_level1.html" as level1 %}
+{% macro outer() %}
+{{ level1::inner() }}
+{% endmacro outer %}
