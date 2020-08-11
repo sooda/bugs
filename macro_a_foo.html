@@ -1,0 +1,8 @@
+{% macro inner() %}
+hello from a
+{% endmacro inner %}
+
+{% macro outer() %}
+{# change "self" from "foo" and this starts working as expected #}
+{{ self::inner() }}
+{% endmacro outer %}

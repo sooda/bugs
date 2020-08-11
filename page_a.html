@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% import "macro_bar.html" as bar %}
+{% import "macro_a_foo.html" as foo %}
+{# change the order of those imports and contents render as intended (or remove bar), but the reorder could break other things #}
+{% block content %}
+{{ foo::outer() }}
+{% endblock content %}
